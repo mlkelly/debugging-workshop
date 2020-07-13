@@ -20,7 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const newJokeLi = document.createElement('li')
 
     if(username === "") return;
-    fetchJoke().then(joke => {
+    fetchJoke()
+    .then(joke => {
       newJokeLi.innerHTML = `
       <span class="username">${username} says:</span> ${joke}
       `
